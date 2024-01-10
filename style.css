@@ -60,6 +60,16 @@ p {
     display: block;
 }
 
+.nav-bar .nav-list ul li a:hover {
+    font-weight: bold;
+}
+
+
+.nav-bar .nav-list ul li a:hover span {
+    padding-bottom: 8px;
+    border-bottom: 3px solid rgb(101, 202, 218);
+}
+
 /* added code  */
 #header .hamburger {
     height: 60px;
@@ -258,7 +268,7 @@ p {
 
 .hero-content .first-col .bottom {
     display: flex;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .hero-content .first-col .bottom .btn {
@@ -266,16 +276,15 @@ p {
     justify-content: center;
     align-items: center;
     background-color: black;
-    padding: 4px;
     border-radius: 30px;
-    width: 26%;
+    width: 22%;
     margin-left: 10px;
     color: white;
-    font-weight: 500;
+    cursor: pointer;
 }
 
 .hero-content .first-col .bottom .btn span {
-    margin-right: 10px;
+    margin-right: 5px;
     font-weight: bolder;
 }
 
@@ -673,13 +682,13 @@ p {
 }
 
 #footer .content .footer-container ul li a:hover {
-    color: rgb(243, 176, 24);
+    color: black;
     font-weight: bold;
 }
 
 #footer .content .footer-container ul li a:hover span {
     padding-bottom: 3px;
-    border-bottom: 1px solid rgb(243, 176, 24);
+    border-bottom: 3px solid rgb(101, 202, 218);
 
 }
 
@@ -755,8 +764,6 @@ p {
 
 /* Media query for tablet */
 @media (min-width: 481px) and (max-width: 767px) {
-
-    *{display: none;}
     #header .nav-list ul {
         display: none;
     }
